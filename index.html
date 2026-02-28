@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Dev | Encriptador Simple</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Jersey+25&family=Lexend:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <h1><span>_</span>CIPHER.DEV</h1>
+        <p class="subtitle">Herramienta de cifrado simétrico simple</p>
+
+        <section class="input-group">
+            <label for="message">Mensaje Original:</label>
+            <textarea id="message" placeholder="Escribe tu mensaje secreto aquí..."></textarea>
+        </section>
+
+        <section class="controls">
+            <div class="shift-control">
+                <label for="shift">Llave (Desplazamiento):</label>
+                <input type="number" id="shift" value="3" min="1" max="25">
+            </div>
+            <div class="buttons">
+                <button id="encryptBtn" class="btn-primary">Cifrar</button>
+                <button id="decryptBtn" class="btn-secondary">Descifrar</button>
+            </div>
+        </section>
+
+        <section class="input-group">
+            <label for="result">Resultado:</label>
+            <textarea id="result" placeholder="El resultado aparecerá aquí o pega un código para descifrar..."></textarea>
+        </section>
+
+        <button id="clearBtn" class="btn-danger">Limpiar</button>
+    </main>
+
+    <script src="script.js"></script>
+</body> 
+</html>
